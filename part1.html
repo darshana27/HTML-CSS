@@ -1,0 +1,644 @@
+<html>
+    <head>
+        <title>Vital Partners</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="w3.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $('li').click(function() {
+                $(this).siblings().find('a').removeClass('focus');
+                $(this).find('a').addClass('focus');
+            });
+        </script>
+        <style>
+            .landing{
+                height:100vh;
+
+            }
+            .landing .row #logoImg{
+                height:14.33vh;
+                margin-top: 1vh;
+                margin-left: 10vw;
+            }
+            nav .nav li a:focus, nav .nav li a:active,nav .nav li a:hover{
+                background-color: transparent;
+                color:#b8d260;
+            }
+            .rightDiv .contactBar p{
+                font-family: 'Satisfy',sans-serif;
+                font-size: 20px;
+                margin-left: 5vw;
+                margin-top: 3vh;
+                color:#666666;
+                opacity: 0.8;
+            }
+
+            .rightDiv .contactBar span input{
+                border:1px solid #222222;
+                border-right: none;
+                border-radius:4px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .rightDiv .contactBar span button{
+                border:1px solid #666666;
+                border-left: none;
+                height:4vh;
+                background-color: #fff;
+                border-radius:4px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                margin-left:-0.6vw;   
+                box-shadow: none !important;
+            }
+            .nav li a{
+                font-size: 13px;
+                font-family: 'Roboto Slab',sans-serif;
+                margin-top: -10px;
+                background-color:transparent;
+                color:#666666;
+            }
+            /* .rightDiv{
+                border:1px solid black;
+            }
+            #logoDiv{
+                border:1px solid black;
+            } */
+            #logoDiv img{
+                margin-right: 0;
+            }
+            #downloadDesc{
+                background:rgb(0,0,0,0.4);
+                padding:2vh;
+                height: 10vh;
+            }
+            #downloadDesc p{
+                color:#fff;
+                font-family: 'Roboto SLab',sans-serif;
+            }
+            #downloadDesc button{
+                border:2px solid white;
+                background-color: #666666;
+                color: #fff;
+            }
+            .landingMain{    
+                height:60vh;
+                background-image: url('images/father-son.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .landingMain p{
+                font-family: 'Roboto Slab',sans-serif;      
+            }
+            .landingMain .row #playbutton{
+                background-color: #b8d260;
+            }
+            .landingMain .row #contactUsNow{
+                background-color: #b8d260;
+                color:#fff;
+            }
+            @media only screen and (max-width:2560px){
+                .landing{
+                    max-width: 2200;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .rightDiv{
+                    width:70%;
+                    margin-left: 20vh;
+                }
+                .rightDiv .contactBar p{
+                    font-size: 30px;
+                    margin-left: 7vw;
+                    margin-top: 3vh;
+                }
+                .nav li a{
+                    font-size: 27px;
+                    float:left;
+                    padding:18px;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: -1vh;
+                    margin-left:23vh;
+                }
+                #downloadDesc p{
+                    font-size: 35px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:5vh;
+                    width:10vw;
+                    font-size: 20px;
+                    margin-left:2vw;
+                }
+                .landingMain .row:first-child{
+                    display: flex;
+                    text-align: center;
+                    padding:20vh;
+                }
+                .landingMain .row #playbutton{
+                    height:10vh;
+                    width:13vh;    
+                }
+                .landingMain .row #playbutton i{
+                    font-size:80px;
+                    color:#fff;
+                }
+                .landingMain p{
+                    padding-top:-10vh;
+                    font-size:55px;
+                }
+                .landingMain .row #contactUsNow{
+                    width:15vw;
+                    height:7vh;
+                    font-size: 25px;
+                }
+            }
+            @media only screen and (max-width:1440px){
+                .landing{
+                    max-width: 1200;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .rightDiv{
+                    width:77%;
+                    margin-left: 20vh;
+                }
+                .rightDiv .contactBar p{
+                    font-size: 20px;
+                    margin-left: 7vw;
+                    margin-top: 3vh;
+                }
+                .nav li a{
+                    font-size: 15px;
+                    float:left;
+                    padding:9px;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:23vh;
+                }
+                #downloadDesc p{
+                    font-size: 20px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:10vw;
+                    font-size: 14px;
+                    margin-left:2vw;
+                }
+                .landingMain .row:first-child{
+                    display: flex;
+                    text-align: center;
+                    padding:10vh;
+                }
+                .landingMain .row #playbutton{
+                    margin-top:6vh;
+                    margin-left:-5vh;
+                    height:10vh;
+                    width:13vh;    
+                }
+                .landingMain .row #playbutton i{
+                    font-size:50px;
+                    color:#fff;
+                }
+                .landingMain p{
+                    padding-top:-18vh;
+                    font-size:35px;
+                }
+                .landingMain .row #contactUsNow{
+                    width:15vw;
+                    height:7vh;
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (max-width:1024px){
+                .landing{
+                    max-width: 900;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .row{
+                    width:100%;
+                }
+                #logoDiv{
+                    float:left;
+                    /* width:30%; */
+                }
+                .landing .row #logoImg{
+                    height:13.33vh;
+                    margin-top: 1vh;
+                    margin-left: 12vw;
+                }
+                .rightDiv{
+                    float:left;
+                    /* width: 65%; */
+                    margin-left:20vh;
+                }
+                .rightDiv .contactBar p{
+                    font-family: 'Satisfy',sans-serif;
+                    font-size: 16px;
+                    margin-left: 6vw;
+                    margin-top: 3vh;
+                    color:#666666;
+                    opacity: 0.8;
+                }
+                .nav li a{
+                    font-size: 11px;
+                    padding: 7px;
+                }
+                .rightDiv .contactBar span button{
+                    height: 4vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:18vh;
+                }
+                #downloadDesc p{
+                    font-size: 16px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:12vw;
+                    font-size: 12px;
+                    margin-left:2vw;
+                }
+                .landingMain .row:first-child{
+                    display: flex;
+                    text-align: center;
+                    padding:10vh;
+                }
+                .landingMain .row #playbutton{
+                    margin-top:6vh;
+                    margin-left:-5vh;
+                    height:10vh;
+                    width:13vh;    
+                }
+                .landingMain .row #playbutton i{
+                    font-size:50px;
+                    color:#fff;
+                }
+                .landingMain p{
+                    padding-top:-18vh;
+                    font-size:25px;
+                }
+                .landingMain .row #contactUsNow{
+                    width:17vw;
+                    height:7vh;
+                    font-size: 17px;
+                }
+            }
+            @media only screen and (max-width:768px){
+                .landing{
+                    max-width: 700;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .row{
+                    width:100%;
+                }
+                #logoDiv{
+                    width:27%;
+                    float:left;
+                }
+                .landing .row #logoImg{
+                    height:10vh;
+                    margin-top: 2.5vh;
+                    margin-left: 5vw;
+                }
+                .rightDiv{
+                    float:left;
+                    width:72%;
+                    height:auto;
+                    margin-top: 1vh;
+                    margin-left:1vh;
+                }
+                .rightDiv .contactBar p{
+                    font-size: 15px;
+                    margin-left: 12vw;
+                    opacity: 0.8;
+                }
+                .rightDiv .contactBar span button{
+                    height: 4vh;
+                }
+                .navDiv{
+                    margin-left:7vh;
+                    height:6vh;
+                }
+                .nav li a{
+                    font-size: 11px;
+                    padding: 6px;
+                }
+                #downloadDesc{
+                    height:auto;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:5vh;
+                }
+                #downloadDesc p{
+                    font-size: 16px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:16vw;
+                    font-size: 10px;
+                    margin-left:2vw;
+                }
+                .landingMain .row:first-child{
+                    display: flex;
+                    text-align: center;
+                    padding:15vh;
+                }
+                .landingMain .row #playbutton{
+                    margin-top:6vh;
+                    margin-left:-5vh;
+                    height:10vh;
+                    width:13vh;    
+                }
+                .landingMain .row #playbutton i{
+                    font-size:50px;
+                    color:#fff;
+                }
+                .landingMain p{
+                    padding-top:-18vh;
+                    font-size:25px;
+                }
+                .landingMain .row #contactUsNow{
+                    width:23vw;
+                    height:7vh;
+                    font-size: 17px;
+                }
+            }
+            @media only screen and (max-width:425px){
+                .landing{
+                    max-width: 400;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .logoDiv{
+                    width:100%;
+                }
+                .landing .row #logoImg{
+                    margin-left: 14vh;
+                }
+                .rightDiv{
+                    width:100%;
+                }
+                .navDiv{
+                    margin-left: 0vh;
+                }
+                .rightDiv .contactBar p{
+                    font-size: 15px;
+                    margin-left: 0vw;
+                    opacity: 0.8;
+                }
+                #downloadDesc{
+                    height:auto;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:5vh;
+                }
+                #downloadDesc p{
+                    font-size: 10px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:5vh;
+                    width:22vw;
+                    font-size: 10px;
+                    margin-left:2vw;
+                }
+                .landingMain{
+                    height: auto;
+                }
+                .landingMain .row{
+                    display: flex;
+                    text-align: center;
+                    padding:0vh;
+                    
+                }
+                .landingMain .row{
+                 
+                }
+                .landingMain .row #contentLeft{
+
+                }
+                .landingMain .row #contentRight{
+                    
+                }
+            }
+            @media only screen and (max-width:380px){
+                .landing{
+                    max-width: 320;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                #logoDiv{
+                    width:100%;
+                    float:left;
+                }
+                .landing .row #logoImg{
+                    height:13.33vh;
+                    margin-top: 1vh;
+                    margin-left:6vh;
+                }
+                .rightDiv{
+                    width:100%;
+                    height:auto;
+                }
+                .navDiv{
+                    margin-left: -2vh;
+                }
+                .rightDiv .contactBar p{
+                    font-family: 'Satisfy',sans-serif;
+                    font-size: 15px;
+                    margin-left: 0vw;
+                    margin-top: 3vh;
+                    color:#666666;
+                    opacity: 0.8;
+                }
+                .rightDiv .contactBar span button{
+                    border-left: none;
+                    height:3.5vh;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;   
+                }
+                .nav li a{
+                    font-size: 11px;
+                    float:left;
+                    padding:6px;
+                }
+                #downloadDesc{
+                    height:13vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: 1vh;
+                    margin-left:0.5vh;
+                }
+                #downloadDesc p{
+                    font-size: 8px;
+                    float: left;
+                    margin-top: 2vh;
+                 
+                }
+                #downloadDesc button{
+                    height:4vh;
+                    width:22vw;
+                    font-size: 8px;
+                    margin-left:2vw;
+
+                }
+            }
+            @media only screen and (max-width:375px){
+                .landing{
+                    max-width: 300;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .landing .row #logoImg{
+                    height:13.33vh;
+                    margin-top: 1vh;
+                    margin-left:4vh;
+                }
+                .rightDiv .contactBar p{
+                    margin-left: 8vh;
+                }
+                .navDiv{
+                    margin-left:6vh;
+                }
+            }
+            @media only screen and (max-width:320px){
+                .landing{
+                    max-width: 280;
+                    margin:auto;
+                    padding-top:7px;   
+                }
+                .landing .row #logoImg{
+                    height:13.33vh;
+                    margin-top: 1vh;
+                    margin-left:2vh;
+                }
+                .rightDiv .contactBar p{
+                    margin-left: 6vh;
+                }
+                .navDiv{
+                    margin-left: 4vh;
+                }
+                #downloadDesc{
+                    height:22vh;
+                    text-align: center;
+                    margin-top:1vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: 0.2vh;
+                    margin-left:34vw;
+                }
+                #downloadDesc p{
+                    font-size: 10px;
+                    float: left;
+                    margin-top: 2vh;  
+                }
+                #downloadDesc button{
+                    height:4vh;
+                    width:24vw;
+                    font-size: 8px;
+                    margin-top:14vh;
+                    margin-left:-20vh;
+                }
+            }
+
+        </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="landing">
+            <div class="row">
+                <!-- <div class="col-md-4 col-sm-4 col-xs-4 col-lg-5" id="logoDiv"> -->
+                <div class="col-md-3" id="logoDiv">
+                        <img src="images/logo.png" id="logoImg"/>
+                </div>
+                <!-- <div class="col-md-10 col-xs-9 col-sm-9 col-lg-7"> -->
+                <div class="col-md-8">
+                    <div class="rightDiv">
+                        <div class="contactBar">
+                            <p>Call Us Today! (02) 9017 8413 <span><input type="text" name="search">
+                                <span><button type="submit"><i class="fa fa-search"></i></button></span></span></p>
+                </div>
+                        <div class="navDiv">
+                            <nav class="navbar">
+                                <div class="container-fluid">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#">Dating Blog</a></li>
+                                        <li><a href="#">Who We Help</a></li>
+                                        <li><a href="#">Why Vital</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+
+            <div class="row">        
+                    <div class="downloadDesc" id="downloadDesc">
+                        <div class="image">
+                            <img src='images/icon5.png'/>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing ind.</p>
+                        <button type="button" class="btn">Download Now</button>
+                    </div>
+            </div>
+            <div class="landingMain">
+                    <div class="row"> 
+                    <div class="col-md-6" id="contentLeft">               
+                        <button type="button" class="btn" id="playbutton"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div id="col-md-6" id=""contentRight>
+                        <p>Lorem Ipsum Dolor Sit Amet Long Dolor Sit Amet.<br>It has survived not on?</p>
+                        <button type="button" class="btn" id="contactUsNow">Contact Us Now!&nbsp;<span><i class="fa fa-whatsapp" 
+                        aria-hidden="true"></i></span></button>
+                    </div>
+                    </div>
+                </div> 
+        </div>
+    </div>
+</body>
+</html>

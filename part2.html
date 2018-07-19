@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Vital Partners</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="w3.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+            /*********Landing Part Two**************/
+            *{
+                box-sizing: border-box;
+            }
+            .landingTwo {
+                max-width: 1024px;
+                margin: auto;
+                background: white;
+                padding-top: 7px;
+            }
+            .landingTwo .row{
+                height:100vh;
+                padding:10vh;
+            }
+            .landingTwo .row .col-md-6 h1{
+                font-family: 'Roboto Slab';
+                font-weight: 400;
+                font-size: 30px;
+            }
+            .landingTwo .row .col-md-6{
+                flex-direction: column;
+                height:90vh;
+                align-content: center;
+                display:block;
+                overflow: auto;
+            }
+            .landingTwo .row .col-md-6 #pdesc{
+                font-family: 'Roboto Slab',sans-serif;
+                font-size: 20px;
+                color:#454545;
+                font-weight: lighter;
+            }
+            .landingTwo .row .col-md-6 p,.landingTwo .row .col-md-6 li{
+                list-style-type: none;
+                font-family: 'Roboto Slab',sans-serif;
+                font-size: 13px;
+                color:#343434;
+                opacity: 0.8;
+            }
+            .landingTwo .row .col-md-6 li span{
+                color: chartreuse;
+            }
+            .landingTwo #img{
+                margin-top:20vh;
+                height:40vh;
+                width:45vh;
+
+            }.landingTwo .row .col-md-6 button{
+                height:8%;
+	            width: 45%;
+	            background-color: #a9ca25;
+	            color:#ffffff;
+            }
+            @media only screen and (max-width:768px){
+                .col-md-6{
+                    width:80vh;
+                    height:auto;
+                    overflow:auto;
+                    /* border: 1px solid black; */
+                }
+                #img{
+                    margin-top:0;
+                }
+            }
+            @media only screen and (min-width:2560px){
+                .landingTwo{
+                    max-width:1900;
+                }
+                .landingTwo .row .col-md-6{
+                    display:block;
+                    overflow: auto;
+                }
+                .landingTwo .row .col-md-6 h1{
+                    font-size: 60px;
+                }
+                .landingTwo .row .col-md-6 p,.row .col-md-6 li{
+                    font-family: 'Roboto Slab',sans-serif;
+                    font-size:28px;
+                }
+            }
+
+        </style>
+    </head>
+<body>
+    <div class="landingTwo">
+    <div class="row">
+        <div class="col-md-6">
+                <div class="contentLeft">
+                <h1>About Us</h1>
+                <br/>
+                
+                <p id="pdesc">It is a long established fact that a user will be distracted.</p>
+                <br>
+                <p>
+                    <b>The point of using lorem ipsum is</b> that it has more-or-less normal<br>
+                    bution of letters, as opposed to using 'Content here, content here', making<br>
+                    look like readable English.<br><br>
+                    <b>There are many varialtions of passages of </b>lorem ipsum available, but the<br>
+                    majority have suffered the alteration in some form.
+                </p>
+                    <br>
+                    <li><span><i class="fa fa-check" aria-hidden="true"></i></span>&nbsp;2000 years old. Richard McClint.</li>
+                    <li><span><i class="fa fa-check" aria-hidden="true"></i></span>&nbsp;Discovred the undoubtable source.</li>
+                    <li><span><i class="fa fa-check" aria-hidden="true"></i></span>&nbsp;Lorem ipsum dolor sit amet.</li>
+                    <br>
+                    <p>remaining essentialluy unchanged. It was popuralised in the 1960s with<br>
+                    the release Letraset sheets containing.
+                </p>
+                <br>
+                <button type="button">Contact Us Now!&nbsp;<span><i class="fa fa-whatsapp" aria-hidden="true"></i></span></button>
+        </div></div>
+        <div class="col-md-6">
+                <img id="img" src="images/girl.jpg"/>
+        </div>
+    </div>
+</div>
+        <!-- <div class="landingPartTwo">
+                <div class="flex-container">
+                  <div class="contentLeft">
+                      <h1>About Us</h1>
+                      <br/>
+                      <p id="pdesc">It is a long established fact that a<br>user will be distracted.</p><br>
+                      <p>
+                          <b>The point of using lorem ipsum is</b> that it has more-or-less normal<br>
+                          bution of letters, as opposed to using 'Content here, content here', making<br>
+                          look like readable English.<br><br>
+                          <b>There are many varialtions of passages of </b>lorem ipsum available, but the<br>
+                          majority have suffered the alteration in some form.</p>
+                          <br>
+                          <li>2000 years old. Richard McClint.</li>
+                          <li>Discovred the undoubtable source.</li>
+                          <li>Lorem ipsum dolor sit amet.</li>
+                          <br>
+                          <p>remaining essentialluy unchanged. It was popuralised in the 1960s with<br>
+                          the release Letraset sheets containing.
+                      </p>
+                      <br>
+                      <button type="button">Contact Us Now!&nbsp;<img src="images/icon1.png"/></button>
+                  </div>
+                  <div class="contentRight">
+                      <img src="images/girl.jpg"/>
+                  </div>
+                </div>
+              </div> -->
+              </body>
+</html>

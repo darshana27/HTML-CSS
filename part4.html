@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Vital Partners</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="w3.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        .landingFour{
+            max-width: 1440px;
+            margin: auto;
+            padding-top: 7px;
+        }
+        .landingFourContainer{
+            background-image: url('images/desert.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:90vh;
+            display: block;
+            text-align: center;
+            /* padding:4vh 20vh 4vh 20vh; */
+        }
+        .landingFourContainer h4{
+            padding:2vh 4vh 0 4vh;
+            font-family: "Roboto Slab",sans-serif;
+            font-size:16px;
+            color:#000;
+            opacity:0.8;
+            font-weight: 400;
+            padding-top:5vh;
+        }
+        .landingFourContainer h3{
+            font-family: "Roboto Slab",sans-serif;
+            font-size: 16px;
+        }
+        .landingFourContainer p{
+            font-family: "Roboto Slab",sans-serif;
+	        font-weight:400;
+            color:#222222;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            opacity: 0.7;
+        }
+        .landingFourContainer .cards{ 
+            width:130vh;
+            /* display: table-cell;
+            vertical-align: middle; */
+            margin:0 auto;
+            padding:5vh 14vh 0 14vh;
+        }
+        .landingFourContainer .cards:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .landingFourContainer .column {
+            min-height:65vh; 
+            border:none;
+            float: left;
+            width: 50vh;
+            padding: 7vh;
+            background-color:white;  
+            
+        }
+        .landingFourContainer .column:last-child{
+            margin-left:10px;
+        }
+        @media screen and (max-width: 1024px) {
+            .landingFourContainer{
+            background-image: url('images/desert.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:100vh;
+            display: block;
+            text-align: center;
+            /* padding:4vh 20vh 4vh 20vh; */
+        }
+        }
+        @media screen and (max-width: 768px) {
+            .landingFour{
+                max-width: 600px;
+                margin:auto;
+                padding: 10px;
+            }
+            .landingFourContainer .column {
+                width: 80%;
+            }
+            .landingFourContainer .column:last-child{
+                margin-left:0;
+                margin-top: 10px;
+            }
+            .landingFourContainer{
+                background-image: url('images/desert.jpg');
+                background-size:100%;
+                background-repeat: no-repeat;
+                overflow: inherit;
+            }
+        }
+        @media screen and (max-width:320){
+            .landingFourContainer .cards{ 
+            width:80%;
+            /* display: table-cell;
+            vertical-align: middle; */
+            margin:0 auto;
+            padding:5vh 10vh 0 10vh;
+            }
+        }
+        @media only screen and (min-width:2560px){
+            .landingFourContainer .column{
+                height: 20vh;
+                width:30%;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="landingFour">
+            <div class="landingFourContainer">
+            <h4>Lorem ipsum is simply a dummy text of the printing and typesetting industry. Lorem ipsum<br>
+                has been the industry's standard ever since the 1500s, when an unknown printer took a <br>
+                galley of type and scambled it to make a type specimen book.
+            </h4>
+            <div class="cards">
+                <div class="column">
+                    <img src="images/icon2.png"/><br>
+                    <h3>What is lorem ipsum?</h3><br>
+                    <p>Lorem ipsum is simply a dummy text of the type setting industry.
+                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and srcambled.
+                    </p><br>
+                    <p>it to make a type specimen book. It has survived not only for five centuries, but also the leap into we eklectronic typesetting, remaining essentially unchnaged.
+                    </p>
+                    <button type="button">Get Started&nbsp;<img src="images/small_triangle.png"/></button>
+                </div>
+                <div class="column">
+                    <img src="images/icon3.png"/><br>
+                    <h3>What is lorem ipsum?</h3><br>
+                    <p>Lorem ipsum is simply a dummy text of the type setting industry.
+                    Lorem Ipsum has the the indusrty's standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and srcambled.
+                    </p><br>
+                    <p>it to make a type specimen book. It has survived not only for five centuries, but also the leap into we eklectronic typesetting, remaining essentially unchnaged.
+                    </p>
+                    <button type="button">Get Started&nbsp;<img src="images/small_triangle.png"/></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+
+        
