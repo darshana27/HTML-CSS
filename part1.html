@@ -249,11 +249,10 @@
                     margin-left:20vh;
                 }
                 .rightDiv .contactBar p{
-                    font-family: 'Satisfy',sans-serif;
                     font-size: 16px;
                     margin-left: 6vw;
                     margin-top: 3vh;
-                    color:#666666;
+
                     opacity: 0.8;
                 }
                 .nav li a{
@@ -371,7 +370,7 @@
                 .landingMain .row:first-child{
                     display: flex;
                     text-align: center;
-                    padding:15vh;
+                    padding:12vh;
                 }
                 .landingMain .row #playbutton{
                     margin-top:6vh;
@@ -391,6 +390,7 @@
                     width:23vw;
                     height:7vh;
                     font-size: 17px;
+                    
                 }
             }
             @media only screen and (max-width:425px){
@@ -444,16 +444,22 @@
                     display: flex;
                     text-align: center;
                     padding:0vh;
-                    
-                }
-                .landingMain .row{
-                 
+                    width:100%;
+                    flex-wrap: wrap; 
                 }
                 .landingMain .row #contentLeft{
-
+                    width:100%;
+                    clear:both;
                 }
-                .landingMain .row #contentRight{
-                    
+                .landingMain p{
+                    padding-top:-18vh;
+                    font-size:20px;
+                    margin-top:2vh;
+                }
+                .landingMain .row #contactUsNow{
+                    width:30vw;
+                    height:5vh;
+                    font-size: 11px;
                 }
             }
             @media only screen and (max-width:380px){
@@ -580,6 +586,16 @@
                     margin-top:14vh;
                     margin-left:-20vh;
                 }
+                .landingMain p{
+                    padding-top:-18vh;
+                    font-size:18px;
+                    margin-top:2vh;
+                }
+                .landingMain .row #contactUsNow{
+                    width:39vw;
+                    height:5vh;
+                    font-size: 11px;
+                }
             }
 
         </style>
@@ -628,10 +644,10 @@
             </div>
             <div class="landingMain">
                     <div class="row"> 
-                    <div class="col-md-6" id="contentLeft">               
+                    <div class="col-lg-6" id="contentLeft">               
                         <button type="button" class="btn" id="playbutton"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
                     </div>
-                    <div id="col-md-6" id=""contentRight>
+                    <div id="col-lg-6" id="contentRight">
                         <p>Lorem Ipsum Dolor Sit Amet Long Dolor Sit Amet.<br>It has survived not on?</p>
                         <button type="button" class="btn" id="contactUsNow">Contact Us Now!&nbsp;<span><i class="fa fa-whatsapp" 
                         aria-hidden="true"></i></span></button>

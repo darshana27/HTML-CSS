@@ -28,15 +28,15 @@
             #Posts div p{
                 font-weight: 300;
             }
-            .landingPartSix #Posts .col-md-4 button{
+            .landingPartSix #Posts .col-lg-4 button{
                 border:1px solid #aacc99;
                 background-color: #fff;
                 color:#aacc99;
             }
-            .landingPartSix #Posts .col-md-4:hover h5{
+            .landingPartSix #Posts .col-lg-4:hover h5{
                 color: #aacc99;
             }
-            .landingPartSix #Posts .col-md-4:hover button{
+            .landingPartSix #Posts .col-lg-4:hover button{
                 background-color: #aacc99;
                 color:#fff;
             }
@@ -44,22 +44,18 @@
                 .landingPartSix{
                     max-width: 2200;
                     margin: auto;
-                    border:1px solid black;
-                    padding:0 20vh 0 20vh;
+                    /* border:1px solid black; */
+                    /* padding:0 20vh 0 20vh; */
                     padding-top: 8vh;
                 }
+                
                 #Posts{
                     padding-top:3vh;
                     /* display: flex; */
                     width:100%;
                     margin:0 -5px;
                 }
-                .col-md-4{
-                    float:left;
-                    width: 20vw;
-                    height: 50vh;
-                    margin: 0 5px;
-                }
+
                 .landingPartSix h1{
                     font-size:70px;
                 }
@@ -77,26 +73,20 @@
                     height: 4vh;
                     width:10vw;
                     font-size: 20px;
-                }
-                
+                } 
             }
             @media only screen and (max-width:1440px){
                 .landingPartSix{
                     height:85vh;
                     max-width:1200;
                     margin:auto;
-                    padding:0 22vh 0 22vh;
+                    /* padding:0 22vh 0 22vh; */
                     text-align: center;
                 }
                 .landingPartSix h1{
                     font-size:40px;
                 }
-                .col-md-4{
-                    float:left;
-                    width: 18vw;
-                    height: 40vh;
-                    margin: 0 5px;
-                }
+
                 #Posts div img{
                     height:25vh;
                     width:18vw;
@@ -108,9 +98,9 @@
                     font-size: 18px;
                 }
                 #Posts button{
-                    height: 4vh;
+                    height: 5vh;
                     width:10vw;
-                    font-size: 20px;
+                    font-size: 19px;
                 }
             }
             @media only screen and (max-width:1024px){
@@ -118,17 +108,12 @@
                     height:85vh;
                     max-width: 900;
                     margin:auto;
-                    padding:5vh 18vh 0 18vh;
+                    padding:5vh 10vh 0 10vh;
                 }
                 .landingPartSix h1{
                     font-size: 30px;
                 }
-                .col-md-4{
-                    float:left;
-                    width:20vw;
-                    height:35vh;
-                    margin: 0 5px;
-                }
+
                 #Posts div img{
                     height:20vh;
                     width:20vw;
@@ -150,28 +135,33 @@
                     height:auto;
                     max-width: 700;
                     margin:auto;
-                    padding:5vh 8vh 0 8vh;
+                    padding:0vh 0vh 0 0vh;
                 }
                 .landingPartSix h1{
                     font-size: 30px;
                 }
                 #Posts{
-                    margin-left:3vh;
-                }
-                .col-md-4{
-                    float:left;
-                    width:23vw;
-                    height:35vh;
-                    margin: 0 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
                 }
                 #Posts div img{
                     height:20vh;
                     width:20vw;
                 }
+                .col-lg-4{
+                    margin-top: 2vh;
+                    width:60vw;
+                    text-align: center;
+
+                }
                 #Posts h5{
                     font-size: 13px;
                 }
                 #Posts p{
+                    word-wrap: break-word;
                     font-size: 13px;
                 }
                 #Posts button{
@@ -180,45 +170,71 @@
                     font-size: 10px;
                 }
             }
-            @media only screen and (max-width:426){
+            @media only screen and (min-width:425){
                 .landingPartSix{
                     height: auto;
                     max-width: 400;
                     margin:auto;
-                    padding:0 10vh 00 10vh;
+                    padding:0;
                 }
-                .col-md-4{   
-                    width:40vh;
-                    height:55vh;
+                .landingPartSix h1{
+                    font-size: 25px;
+                }
+                #Posts button{
+                    height: 5vh;
+                    width:17vw;
+                    font-size: 14px;
+                }
+                #Posts div img{
+                    height:22vh;
+                    width:25vw;
+                }
 
+            }
+            @media only screen and (min-width:320){
+                .landingPartSix{
+                    height: auto;
+                    max-width: 400;
+                    margin:auto;
+                    padding:0;
                 }
+                .landingPartSix h1{
+                    font-size: 20px;
+                }
+                #Posts button{
+                    height: 5vh;
+                    width:17vw;
+                    font-size: 10px;
+                }
+
             }
 
         </style>
 </head>
 <body>
-        <div class="landingPartSix">
+        <div class="landingPartSix" >
                 <h1>Our Lastest Blog Posts</h1>
-                <div id="Posts">
-                    <div class="col-md-4">
-                        <img src="images/blog_image_3.jpg"/><br><br>
-                        <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
-                        <p>Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                        <button type="button">Read More</button>
+                <div id="Posts" class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                <img src="images/blog_image_3.jpg"/><br><br>
+                                <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
+                                <p class="text-xs-center">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
+                                <button type="button">Read More</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <img src="images/user3.png"/><br><br>
+                            <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
+                            <p class="text-xs-center">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
+                            <button type="button">Read More</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <img src="images/user3.png"/><br><br>
+                            <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
+                            <p class="text-xs-center">Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
+                            <button type="button">Read More</button>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="images/user3.png"/><br><br>
-                        <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
-                        <p>Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                        <button type="button">Read More</button>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/user3.png"/><br><br>
-                        <h5>Duis eget leo sit amt orci suscipit lacinia mneque</h5><br>
-                        <p>Contrary to popular belief. Lorem ipsum is not a random text. It has roots n piece of classcal Latin literature from 45BC, making it over 2000.<br>Richard McClint</p><br>
-                        <button type="button">Read More</button>
-                    </div>
-                </div>
+    
             </div>
 </body>
 </html>

@@ -1,0 +1,428 @@
+<html>
+    <head>
+        <title>Vital Partners</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="w3.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .landingPartSeven{
+                height:80vh;
+                bottom:0;
+                margin-top:30vh;
+                width:100vw;
+            }
+            #downloadDesc{
+                background:rgb(0,0,0,0.4);
+                padding: 5px 0 5px 0;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:100vw;
+            }
+
+            #downloadDesc p{
+                color:#fff;
+                font-family: 'Roboto SLab',sans-serif;
+            }
+            #downloadDesc button{
+                border:2px solid white;
+                background-color: #666666;
+                color: #fff;
+            }
+            .logoDesc .desc p{
+                font-family: 'Roboto Slab',sans-serif;
+                font-weight:300;
+                margin-top:5vh;
+            }
+            .contact .contactPh p{
+                font-family: 'Satisfy',sans-serif;
+            }
+            .contactButtons button{
+                background-color: #53AF0B;
+                color:#fff;
+                height:5vh;
+                margin-bottom:4vh;
+                border:none;
+                border-radius:3px;
+            }
+            .footer{
+                width:100vw;
+                padding:4vh 0 4vh 0;
+                background-color: #333333;
+            }
+            .footerContent .col-lg-4 li{
+                list-style-type: none;
+            }
+            .footerContent .col-lg-3 li{
+                list-style-type: none;
+            }
+            .landingPartSeven p,h4,li,li a{
+                color:#fff;
+                font-family: 'Roboto Slab',sans-serif;
+            }
+            .landingPartSeven p, li, li a{
+                opacity: 0.7;
+                font-weight: 300;
+            }
+            .copyright p,li a{
+                color:#fff;
+                font-family: 'Roboto Slab',sans-serif;
+            }
+            .copyright .col-lg-3{
+                color:#fff;
+                opacity: 0.8;
+                font-family: 'Roboto Slab',sans-serif;
+                font-weight: 300;
+            }
+            .copyright li{
+                float: left;
+                list-style-type: none;
+            }
+            .copyright{
+                padding:3px;
+                width:100vw;
+                background-color: #141414;
+            }
+
+            @media only screen and (min-width:2560px){
+                .landingPartSeven footer{
+                    max-width:2200px;
+                    margin:0 auto;
+                    border:1px solid white;
+                }
+                #downloadDesc{
+                    display:flex;
+                    height:10vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: -1vh;
+                    margin-left:23vh;
+                }
+                #downloadDesc p{
+                    font-size: 35px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:5vh;
+                    width:10vw;
+                    font-size: 20px;
+                    margin-left:2vw;
+                    padding-bottom: 4vh;
+                }
+                .logoDesc .desc p{
+                    font-size: 27px;
+                }
+                .contact .contactPh p{
+                    font-size:30px;
+                }
+                .landingPartSeven h4{
+                    font-size: 28px;
+                }
+                .landingPartSeven p,li,li a{
+                    font-size: 24px;
+                }
+                .copyright{
+                    font-size:20px;
+                }
+                .copyright li a{
+                    font-size: 19px;
+                }
+                .contactButtons button{
+                    width:10vw;
+                    height:6vh;
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (min-width:1440px){
+                /* #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:23vh;
+                }
+                #downloadDesc p{
+                    font-size: 20px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:10vw;
+                    font-size: 14px;
+                    margin-left:2vw;
+                } */
+                .contact .contactPh p{
+                    font-size:29px;
+                }
+            }
+            @media only screen and (max-width:1024px){
+                /* #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:18vh;
+                }
+                #downloadDesc p{
+                    font-size: 16px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:12vw;
+                    font-size: 12px;
+                    margin-left:2vw;
+                } */
+                .logo .img{
+                    width:14vw;
+                }
+                .contactButtons button{
+                    width:11vw;
+                    height:6vh;
+                    font-size: 11px;
+                }
+                .landingPartSeven h4{
+                    font-size: 18px;
+                }
+                .landingPartSeven p,li,li a{
+                    font-size: 11px;
+                }
+                .copyright{
+                    font-size:10px;
+                }
+                .contact .contactPh p{
+                    font-size:21px;
+                }
+            }
+            @media only screen and (min-width:768px){
+                /* #downloadDesc{
+                    height:auto;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:5vh;
+                }
+                #downloadDesc p{
+                    font-size: 16px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:6vh;
+                    width:16vw;
+                    font-size: 10px;
+                    margin-left:2vw;
+                } */
+            }
+            @media only screen and (max-width:425px){
+                .contactButtons button{
+                    width:23vw;
+                    height:6vh;
+                    font-size: 10px;
+                }
+                .landingPartSeven p,li,li a{
+                    font-size: 11px;
+                }
+                .copyright{
+                    font-size:10px;
+                }
+                .contact .contactPh p{
+                    font-size:21px;
+                }
+                /* #downloadDesc{
+                    height:auto;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 9vh;
+                    width:6vh;
+                    margin-top: -1vh;
+                    margin-left:5vh;
+                }
+                #downloadDesc p{
+                    font-size: 10px;
+                    float: left;
+                    margin-left: 2vw;
+                }
+                #downloadDesc button{
+                    height:5vh;
+                    width:22vw;
+                    font-size: 10px;
+                    margin-left:2vw;
+                } */
+                
+            }
+            @media only screen and (max-width:375px){
+                .contactButtons button{
+                    width:23vw;
+                    height:6vh;
+                    font-size: 10px;
+                }
+                .landingPartSeven p,li,li a{
+                    font-size: 11px;
+                }
+                .copyright{
+                    font-size:10px;
+                }
+                .contact .contactPh p{
+                    font-size:21px;
+                }
+                /* #downloadDesc{
+                    height:13vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: 1vh;
+                    margin-left:0.5vh;
+                }
+                #downloadDesc p{
+                    font-size: 8px;
+                    float: left;
+                    margin-top: 2vh;
+                 
+                }
+                #downloadDesc button{
+                    height:4vh;
+                    width:22vw;
+                    font-size: 8px;
+                    margin-left:2vw;
+
+                } */
+            }
+            @media only screen and (max-width:320px){
+                .logoDesc .logo img{
+                    width:55vw;
+                 }
+                 .contactButtons button{
+                    width:23vw;
+                    height:6vh;
+                    font-size: 10px;
+                }
+                .landingPartSeven p,li,li a{
+                    font-size: 11px;
+                }
+                .copyright{
+                    font-size:10px;
+                }
+                .contact .contactPh p{
+                    font-size:21px;
+                }
+            }
+                /* #downloadDesc{
+                    height:22vh;
+                    text-align: center;
+                    margin-top:1vh;
+                }
+                #downloadDesc img{
+                    float:left;
+                    height: 8vh;
+                    width:5vh;
+                    margin-top: 0.2vh;
+                    margin-left:34vw;
+                }
+                #downloadDesc p{
+                    font-size: 10px;
+                    float: left;
+                    margin-top: 2vh;  
+                }
+                #downloadDesc button{
+                    height:4vh;
+                    width:24vw;
+                    font-size: 8px;
+                    margin-top:14vh;
+                    margin-left:-20vh;
+                } */
+            
+        </style>
+        </head>
+<body>
+<div class="landingPartSeven">
+        <div class="row">        
+                <div class="downloadDesc" id="downloadDesc">
+                    <div class="image">
+                        <img src='images/icon5.png'/>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing ind.</p>
+                    <button type="button" class="btn">Download Now</button>
+                </div>
+        </div>
+        <div class="footer">
+            <div class="row logoDesc">
+                <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 logo"><img src="images/logo.png"/></div>
+                <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 desc">
+                    <p>Shortcut your search to happiness right now.<br>Live a life without regrets and take action today!</p>
+                </div>
+            </div><br><br>
+            <div class="row contact">
+                <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 contactPh"><p>Call Us Today! (02) 9017 8413</p></div>
+                <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 contactButtons">
+                    <button type="button" id="appointmentBtn">Book an appointment</button>
+                    <button type="button" id="contactConsultant">Contact a consultant</button></div>
+            </div><br><br>
+            <div class="footerContent row">
+                <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1">
+                    <h4>CONTACT INFO</h4>
+                    <br>
+                    <b>4/220 George St,Sydney NSW 2000</b>
+                    <p>Phone: (02) 9017 8413<br>Email: info@syd.vitalpartners.com.au</p>
+                    <br>
+                    <b>Canberra City ACT 2600</b>
+                    <p>Phone: (02) 9017 8426<br>Email: info@can.vitalpartners.com.au</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>RECENT POSTS</h4>
+                    <br>
+                    <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;How to recover after a bad date</a></li>
+                    <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Review | Vital Partners Review</a></li>
+                    <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Review | Vital Partners Review</a></li>
+                    <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Review | Vital Partners Derek and Julie</a></li>
+                    <li><a href=""><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;7 rules for a Happy Relationship | Vital Partners dating Sydney</a></li>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>RECENT TWEETS</h4>
+                    <br>
+                    <li><span><i class="fa fa-twitter" aria-hidden="true"></i></span>&nbsp;Are you being vulnerable to find love? via offline dating agengy Sydney Canberra Vital Partners<br>
+                        <a href="http://t.co/hGCgHEU6lF">http://t.co/hGCgHEU6lF<span>&nbsp;&nbsp;&nbsp;&nbsp;1 week ago</span></a>
+                    </li><br>
+                    <li><span><i class="fa fa-twitter" aria-hidden="true"></i></span>&nbsp;Are you being vulnerable to find love? via offline dating agengy Sydney Canberra Vital Partners<br>
+                        <a href="http://t.co/hGCgHEU6lF">http://t.co/hGCgHEU6lF<span>&nbsp;&nbsp;&nbsp;&nbsp;1 week ago</span></a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-lg-3 col-lg-offset-1">
+                &copy;VitalPartners.com.au
+            </div>
+            <div class="col-lg-4">
+                <li><a>Contact &nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+                <li><a>Terms Of Use &nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+                <li><a>Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+                <li><a>Disclaimer&nbsp;&nbsp;</a></li>
+            </div>
+            <div class="col-lg-4">
+                <p>FOLLOW US: <span><img src="images/icon10.png"/></span>
+                    <span><img src="images/icon11.png"/></span>
+                    <span><img src="images/icon12.png"/></span>
+                    <span><img src="images/icon13.png"/></span>
+                    <span><img src="images/icon14.png"/></span></p>
+            </div>
+        </div>
+    </div>
+    </body>
